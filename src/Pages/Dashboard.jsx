@@ -16,8 +16,8 @@ function Dashboard() {
   const dateParam = searchParams.get('date') || '01-01-2025';
 
   useEffect(() => {
-    
-    fetch('./src/assets/data.json')
+    // Updated path to fetch from public folder
+    fetch('/data.json')
       .then((res) => {
         if (!res.ok) {
           throw new Error(`Failed to fetch data.json (${res.status})`);
@@ -25,7 +25,6 @@ function Dashboard() {
         return res.json();
       })
       .then((allData) => {
-
         const matchedData = allData.find((item) => item.date === dateParam);
 
         if (matchedData) {
@@ -57,13 +56,13 @@ function Dashboard() {
       {/* Charts row */}
       <div className="charts-row">
         <div className='line-chart-container'>
-        <CustomLineChart
-          supplierData={dashboardData.supplier_records}
-          customerData={dashboardData.customer_records}
-        />
+          <CustomLineChart
+            supplierData={dashboardData.supplier_records}
+            customerData={dashboardData.customer_records}
+          />
         </div>
         <div className='pie-chart-container'>
-        <MyPieChart data={dashboardData.top_selling_products} />
+          <MyPieChart data={dashboardData.top_selling_products} />
         </div>
       </div>
 

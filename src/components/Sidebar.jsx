@@ -9,32 +9,32 @@ function Sidebar() {
     {
       label: 'Dashboard',
       path: '/dashboard',
-      activeIcon: './src/assets/active.png',
-      inactiveIcon: './src/assets/active.png'
+      activeIcon: '/active.png',
+      inactiveIcon: '/active.png'
     },
     {
       label: 'Menu 1',
       path: '/menu1',
-      activeIcon: './src/assets/C.png',   
-      inactiveIcon: './src/assets/C.png'
+      activeIcon: '/C.png',   
+      inactiveIcon: '/C.png'
     },
     {
       label: 'Menu 2',
       path: '/menu2',
-      activeIcon: './src/assets/D.png',
-      inactiveIcon: './src/assets/D.png'
+      activeIcon: '/D.png',
+      inactiveIcon: '/D.png'
     },
     {
       label: 'Menu 3',
       path: '/menu3',
-      activeIcon: './src/assets/A.png',
-      inactiveIcon: './src/assets/A.png'
+      activeIcon: '/A.png',
+      inactiveIcon: '/A.png'
     },
     {
       label: 'Admin Panel',
       path: '/admin',
-      activeIcon: './src/assets/inactive.png',
-      inactiveIcon: './src/assets/inactive.png'
+      activeIcon: '/inactive.png',
+      inactiveIcon: '/inactive.png'
     }
   ];
 
@@ -42,7 +42,7 @@ function Sidebar() {
     <aside className="sidebar">
       <div className="sidebar__logo">
         <img
-          src="./src/assets/c163cb6da41a5528ea1ac57f3fe77daf.png"
+          src="/c163cb6da41a5528ea1ac57f3fe77daf.png"
           alt="Lightning Logo"
         />
       </div>
@@ -69,10 +69,9 @@ function Sidebar() {
         </ul>
       </nav>
 
-     
       <div className="sidebar__support">
         <div className="support-illustration">
-          <img src="./src/assets/Support.png" alt="Support" />
+          <img src="/Support.png" alt="Support" />
         </div>
       </div>
     </aside>
