@@ -1,0 +1,218 @@
+.header {
+  height: 60px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.header__title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aef0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 20px;
+  margin: 0 auto;
+  width: 400px;
+  letter-spacing: 1px;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__profile, .header__search {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.arrow-icon {
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.arrow-down::before {
+  content: "▼";
+  font-size: 0.75rem;
+}
+
+.arrow-up::before {
+  content: "▲";
+  font-size: 0.75rem;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 45px; 
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+  padding: 1rem;
+  width: 280px;
+  height: 390px;
+  gap: 0px;
+  border-radius: 10px;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-dropdown li {
+  padding: 0.4rem 0;
+  color: #555;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.profile-dropdown li:hover {
+  background-color: #f7f7f7;
+}
+
+.notifications-list {
+  margin: 0;
+  padding: 0;
+}
+
+.notifications-list h4 {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.notifications-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.notifications-list li {
+  margin-bottom: 0.4rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* A simple back button to return to profile menu */
+.back-button {
+  background: #eee;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
+
+/* Profile Dropdown */
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  color: #555;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.profile-dropdown li img.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  object-fit: contain;
+}
+
+.profile-dropdown li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.notifications-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notifications-panel li {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notifications-panel li:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.notification-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-text span:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.notification-text .time {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  color: #333;
+}

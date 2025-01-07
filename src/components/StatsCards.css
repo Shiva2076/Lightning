@@ -1,0 +1,43 @@
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  color: #000000; 
+
+}
+
+.stats-card1,
+.stats-card2,
+.stats-card3,
+.stats-card4,
+.stats-card5 {
+  border: 1px solid #eee;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stats-card1,
+.stats-card3,
+.stats-card5 {
+  background-color: #d9f2fb;
+}
+
+.stats-card2,
+.stats-card4 {
+  background-color: #e2e5ea;
+}
+
+.stats-card h4,
+.stats-card p {
+  color: #000000; 
+}
+
+.stats-cards img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}

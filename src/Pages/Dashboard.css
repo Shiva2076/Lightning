@@ -1,0 +1,52 @@
+/* Dashboard.css */
+
+.dashboard {
+  width: 100%;
+  padding: 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.dashboard > h1 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Fixed the double dot here */
+.charts-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.line-chart-container {
+  width: 66.67%;
+}
+
+.pie-chart-container {
+  width: 33.33%;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tables-container {
+  margin-top: 1rem; 
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.loading-spinner {
+  font-size: 1rem;
+  color: #666;
+  padding: 1rem;
+}

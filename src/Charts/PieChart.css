@@ -1,0 +1,64 @@
+.chart-container {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  flex: 0.7;
+}
+
+.chart-container h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.custom-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.legend-item {
+  display: flex;
+  
+}
+
+
+
+.legend-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.legend-text {
+  line-height: 1.5;
+  vertical-align: top;
+  color: #333;
+  font-size: 0.9rem;
+  flex: 1;
+  text-align: right;
+width: Fixed (214px)px;
+height: Fixed (140px)px;
+top: 267px;
+left: 29px;
+gap: var(--12);
+border-radius: var(--16);
+opacity: 0px;
+
+}
