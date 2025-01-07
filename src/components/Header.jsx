@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import './Header.css';
 
-// Remove all previous imports for images since they're now in public folder
-
 function Header() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [menuView, setMenuView] = useState('profile');

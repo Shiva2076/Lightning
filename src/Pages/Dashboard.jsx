@@ -1,4 +1,3 @@
-// src/Pages/Dashboard.jsx
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
@@ -16,7 +15,6 @@ function Dashboard() {
   const dateParam = searchParams.get('date') || '01-01-2025';
 
   useEffect(() => {
-    // Updated path to fetch from public folder
     fetch('/data.json')
       .then((res) => {
         if (!res.ok) {
@@ -36,24 +34,21 @@ function Dashboard() {
       .catch((err) => setError(err.message));
   }, [dateParam]);
 
-  // If there was an error (not found, fetch error, etc.)
   if (error) {
     return <div className="error-message">{error}</div>;
   }
 
-  // If data is still loading
   if (!dashboardData) {
     return <div className="loading-spinner">Loading...</div>;
   }
 
-  // Successfully fetched & matched data
   return (
     <div className="dashboard">
       <h1>Overview </h1>
 
       <StatsCards data={dashboardData} />
 
-      {/* Charts row */}
+
       <div className="charts-row">
         <div className='line-chart-container'>
           <CustomLineChart
@@ -66,7 +61,7 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* Tables */}
+     
       <div className="tables-container">
         <Tables
           supplierPayments={dashboardData.supplier_payments}
